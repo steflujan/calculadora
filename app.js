@@ -3,9 +3,9 @@ var calculadora = parseInt(prompt("Escoja un número:\n"+
 	"2. resta\n" + 
 	"3. multiplicacion\n" + 
 	"4. division\n" +  
-	"5. mayor que\n" +  
-	"6. menor que\n" + 
-	"7. residuo \n" ));
+	"5. mayorQue\n" +  
+	"6. menorQue\n" + 
+	"7. modulo\n" ));
 var numero1 = parseInt(prompt("Ingresa el primer número"));
 var numero2 = parseInt(prompt("Ingresa el segundo número"));
 
@@ -28,7 +28,7 @@ var numero2 = parseInt(prompt("Ingresa el segundo número"));
 			break;
 		case 5:
 			var mayorQue = Math.max(numero1,numero2);
-			window.alert(mayorQue);
+			window.alert("El número mayor es: "+ mayorQue);
 			break;
 
 			/*if(numero1 > numero2){
@@ -40,11 +40,11 @@ var numero2 = parseInt(prompt("Ingresa el segundo número"));
 			
 		case 6:
 			var menorQue = Math.min(numero1,numero2);
-			window.alert(menorQue);
+			window.alert("El número menor es: "+ menorQue);
 			break;
 		case 7:
-       var  residuo = (numero1 / 100) * numero2; 
-       document.write("el total de la resto-modulo es:" + residuo);
+          	var  modulo = (numero1 / 100) * numero2; 
+       		window.alert("el total del resto-modulo es:" + modulo);
     	break;
 
 		default:
